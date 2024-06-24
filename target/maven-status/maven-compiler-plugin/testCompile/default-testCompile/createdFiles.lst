@@ -1,0 +1,10 @@
+com\example\eventhandler\LoggingHandlerTest.class
+com\example\eventhandler\HighLoadEventHandlerTest.class
+com\example\eventhandler\JSONEncodingHandlerTest.class
+com\example\eventhandler\ResourceEventGeneratorTest$1.class
+com\example\eventhandler\FilteringHandlerTest.class
+com\example\eventhandler\ResourceEventGeneratorTest$MockHandler.class
+com\example\eventhandler\BufferingAndReorderingHandlerTest.class
+com\example\eventhandler\ResourceEventGeneratorTest.class
+com\example\eventhandler\LoggingHandlerTest$1.class
+com\example\eventhandler\LoggingHandlerTest$TestLogHandler.class
