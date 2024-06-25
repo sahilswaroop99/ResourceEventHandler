@@ -32,14 +32,15 @@ java -cp "out;gson-2.8.6.jar;junit-4.13.2.jar;hamcrest-core-1.3.jar" org.junit.r
 
 With Maven:
 
-mvn clean
 mvn compile
-mvn test-compile
-mvn test
 mvn exec:java
 
+mvn test-compile
+mvn test
 
-Creating Complete JAVA Docs:
+
+
+Created Complete JAVA Docs using: 
 javadoc -d javadocs -sourcepath src\main\java -subpackages com.example.eventhandler -classpath gson-2.8.6.jar
 
 
