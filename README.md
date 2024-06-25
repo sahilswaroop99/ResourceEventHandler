@@ -20,4 +20,5 @@ This project is a Java application that simulates a Resource Event Generator and
 - Dependencies: Gson library (`gson-2.8.6.jar`), JUnit and Hamcrest libraries (`junit-4.13.2.jar`, `hamcrest-core-1.3.jar` for testing)
 
 ## Setup and Run
-Refer to the Commands to run "Command to Compile and Run.txt" file for details to compile and run 
+Refer to the Commands to run "Command to Compile and Run.txt" file for details to compile and run the src files which have both source and test files with the functionalities and their testing case codes mention, the Final_Output Folder contains the outputs for your refernece.
+
