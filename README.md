@@ -1,101 +1,69 @@
-# ResourceEventHandler
-Resource Event Handler
-The Resource Event Handler is a Java application designed to generate resource events and handle them through various event handlers. It provides functionalities for event generation, event encoding, filtering, logging, buffering, and handling high loads of events.
+# Resource Event Handler Project
 
-Project Structure
-The project structure is organized as follows:
+This project is a Java application that simulates a Resource Event Generator and various Resource Event Handlers. It demonstrates handling resource events with functionalities such as encoding events to JSON, filtering events based on criteria, logging events, buffering and re-ordering events based on timestamp, and handling high loads of events.
 
-scss
-Copy code
+## Project Structure
+
+The project structure is as follows:
+
 ResourceEventHandler/
 ├── src/
-│   ├── main/
-│   │   └── java/
-│   │       └── com/
-│   │           └── example/
-│   │               └── eventhandler/
-│   │                   ├── ResourceEventGenerator.java
-│   │                   ├── ResourceEventHandler.java
-│   │                   ├── JSONEncodingHandler.java
-│   │                   ├── FilteringHandler.java
-│   │                   ├── LoggingHandler.java
-│   │                   ├── BufferingAndReorderingHandler.java
-│   │                   ├── HighLoadEventHandler.java
-│   │                   └── Main.java
-│   └── test/
-│       └── java/
-│           └── com/
-│               └── example/
-│                   └── eventhandler/
-│                       ├── ResourceEventGeneratorTest.java
-│                       ├── JSONEncodingHandlerTest.java
-│                       ├── FilteringHandlerTest.java
-│                       ├── LoggingHandlerTest.java
-│                       ├── BufferingAndReorderingHandlerTest.java
-│                       └── HighLoadEventHandlerTest.java
+│ ├── main/
+│ │ └── java/
+│ │ └── com/
+│ │ └── example/
+│ │ └── eventhandler/
+│ │ ├── ResourceEventGenerator.java
+│ │ ├── ResourceEventHandler.java
+│ │ ├── JSONEncodingHandler.java
+│ │ ├── FilteringHandler.java
+│ │ ├── LoggingHandler.java
+│ │ ├── BufferingAndReorderingHandler.java
+│ │ ├── HighLoadEventHandler.java
+│ │ └── Main.java
+│ └── test/
+│ └── java/
+│ └── com/
+│ └── example/
+│ └── eventhandler/
+│ ├── ResourceEventGeneratorTest.java
+│ ├── JSONEncodingHandlerTest.java
+│ ├── FilteringHandlerTest.java
+│ ├── LoggingHandlerTest.java
+│ ├── BufferingAndReorderingHandlerTest.java
+│ └── HighLoadEventHandlerTest.java
 ├── lib/
-│   ├── gson-2.8.6.jar
-│   ├── junit-4.13.2.jar
-│   └── hamcrest-core-1.3.jar
-├── javadocs/          (Generated JavaDocs for main source files)
-├── test-javadocs/     (Generated JavaDocs for test files)
-├── pom.xml            (Maven project configuration - optional)
-└── README.md          (This file)
-Features
-Resource Event Generator: Generates resource events with random values at regular intervals.
-Event Handlers:
-JSONEncodingHandler: Encodes resource events in JSON format.
-FilteringHandler: Filters events based on specified criteria (name, datatype, value).
-LoggingHandler: Logs events to console or file.
-BufferingAndReorderingHandler: Buffers and re-orders events based on timestamp.
-HighLoadEventHandler: Handles high loads of events efficiently.
-Dependencies
-Gson (version 2.8.6): For JSON encoding and decoding.
-JUnit (version 4.13.2): For unit testing.
-Hamcrest Core (version 1.3): For enhanced matching assertions in tests.
-Getting Started
-Prerequisites
-Java Development Kit (JDK) installed.
-Git installed (optional for version control).
-Maven installed (optional for dependency management and build).
-Installation
-Clone the repository:
+│ ├── gson-2.8.6.jar
+│ ├── junit-4.13.2.jar
+│ └── hamcrest-core-1.3.jar
+├── javadocs/ # Generated JavaDocs for main source files
+├── test-javadocs/ # Generated JavaDocs for test files
+├── README.md # This file
+└── pom.xml # Maven project configuration (if applicable)
 
-bash
-Copy code
-git clone https://github.com/your-username/ResourceEventHandler.git
-cd ResourceEventHandler
-Compile the project (if not using Maven):
 
-bash
-Copy code
-javac -cp lib/gson-2.8.6.jar -d out src/main/java/com/example/eventhandler/*.java
-Usage
-Run the main class Main.java to start the Resource Event Generator and register event handlers.
+## Features
 
-bash
-Copy code
-java -cp out;lib/gson-2.8.6.jar com.example.eventhandler.Main
-Customize and extend event handlers in com.example.eventhandler package as needed.
+- **Resource Event Generator**: Generates resource events with random values once a second.
+- **Resource Event Handlers**:
+  - **JSONEncodingHandler**: Encodes resource events to JSON format.
+  - **FilteringHandler**: Filters resource events by name, datatype, or value.
+  - **LoggingHandler**: Logs resource events to console or file.
+  - **BufferingAndReorderingHandler**: Buffers and re-orders events based on timestamp.
+  - **HighLoadEventHandler**: Handles very high loads of events efficiently.
+- **Main Application**: Entry point to run and demonstrate the functionality.
 
-Documentation
-JavaDocs for main source files
-JavaDocs for test files
-Testing
-Run unit tests using JUnit:
+## Requirements
 
-bash
-Copy code
-java -cp out;lib/gson-2.8.6.jar;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore com.example.eventhandler.AllTests
-Ensure all tests pass successfully.
+- Java 8 or higher
+- Dependencies: Gson library (`gson-2.8.6.jar`), JUnit and Hamcrest libraries (`junit-4.13.2.jar`, `hamcrest-core-1.3.jar` for testing)
 
-Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+## Setup and Run
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+### Manual Setup
 
-Acknowledgments
-Inspired by [insert inspiration if any]
-Thanks to [insert anyone you want to thank]
-Replace placeholders like your-username, your-email, and update sections like Acknowledgments and License with appropriate information for your project. This README file serves as a comprehensive guide for users and contributors to understand, install, and utilize your Resource Event Handler project effectively.
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/your-username/ResourceEventHandler.git
+   cd ResourceEventHandler
